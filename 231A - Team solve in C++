@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+ 
+using namespace std;
+ 
+int main()
+{
+    int n,p,q,r,count=0;
+    cin>>n;
+    while(n--){
+        cin>>p>>q>>r;
+        if( (p==1 && q==1) || (p==1 && r==1) || (q==1 && r==1) )
+            count++;
+    }
+    cout<<count<<endl;
+ 
+    return 0;
+}
